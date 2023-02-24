@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Pregunta;
+use Illuminate\Contracts\View\View;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 
@@ -14,7 +15,8 @@ class PreguntaController extends Controller
     public function index()
     {
         //
-        return Pregunta::all();
+        $preguntas=Pregunta::paginate();
+        return View('preguntas',compact('preguntas'));
 
     }
 
