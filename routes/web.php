@@ -18,3 +18,13 @@ Route::get('/', function () {
 });
 
 Route::get('/preguntas', [App\Http\Controllers\PreguntaController::class,'index']);
+
+Route::middleware([
+    'auth:sanctum',
+    config('jetstream.auth_session'),
+    'verified'
+])->group(function () {
+    Route::get('/dashboard', function () {
+        return view('dashboard');
+    })->name('dashboard');
+});

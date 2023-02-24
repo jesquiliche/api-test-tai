@@ -16,11 +16,27 @@
                 </div>
             <div class="card-body p-2">
             <form>
+                
                        
-                <input type="radio" name="respuesta" value="a"><i> a) {{$pregunta->a}}</i> <br/>
-                <input type="radio" name="respuesta" value="b"><i> b) {{$pregunta->b}}</i><br/>
-                <input type="radio" name="respuesta" value="c"><i> c) {{$pregunta-> c}}</i> <br/>
-                <input type="radio" name="respuesta" value="d"><i> d) {{$pregunta-> d}}</i> <br/>
+                <input type="radio" name="respuesta" value="a"> a) <i>{{$pregunta->a}}</i>
+                @if ($pregunta->respuesta=="a")
+                    <b> <i class="fas fa-check"></i> Correcta</b>
+                @endif
+                <br/>
+                <input type="radio" name="respuesta" value="b"> b)<i> {{$pregunta->b}}</i>
+                @if ($pregunta->respuesta=="b")
+                    <b><i class="fas fa-check"></i>  Correcta</b>
+                @endif
+                <br/>
+                <input type="radio" name="respuesta" value="c"><i> c) {{$pregunta-> c}}</i>
+                @if ($pregunta->respuesta=="c")
+                    <b><i class="fas fa-check"></i>  Correcta</b>
+                @endif
+                <br/>
+                <input type="radio" name="respuesta" value="d"><i> d) {{$pregunta-> d}}</i> 
+                @if ($pregunta->respuesta=="d")
+                    <b><i class="fas fa-check"></i>  Correcta</b>
+                @endif
                 <br/>
                 <input type="submit" class="btn btn-primary">
                 <br/>

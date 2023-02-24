@@ -9,6 +9,9 @@
         <!-- Fonts -->
         <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+        <link rel="stylesheet" href="https://cdn.tailwindcss.com/css/tailwind.min.css">
+
         <!-- Styles -->
         <title>@yield('title')</title>
         <style>
@@ -19,33 +22,46 @@
             body {
                 font-family: 'Nunito', sans-serif;
             }
+            .fas {
+                font-size: 20px;
+            }
+            .fa-check {
+                color: rgb(132, 220, 132);
+                font-size: 18px;
+}           }
         </style>
     </head>
         <main>
             <div class="container-fluid bg-warning p-2 fixed-top mb-4">
             <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light bg-warning">
-                <a class="navbar-brand" href="#">Navbar w/ text</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
+                <a class="navbar-brand" href="#"><i class="fas fa-graduation-cap"></i> Test Oposiciones Tai</a>
+                
                 <div class="collapse navbar-collapse" id="navbarText">
+                    
                   <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <li class="nav-item active ml-3">
+                      <a class="nav-link" href="#"><i class="fas fa-home"></i>
+                      </i> Home<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Features</a>
+                        
+                      <a class="nav-link" href="#"><i class="fas fa-book"></i> Test</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Pricing</a>
+                      <a class="nav-link" href="#"><i class="fas fa-envelope"></i> Contacto</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-id-card"></i> Sobre mi</a>
+                      </li>
                   </ul>
-                  <span class="navbar-text">
-                    Navbar text with an inline element
-                  </span>
+                  
                 </div>
+                <span class="navbar-text mr-3">
+                    <h5>Bienvenido <i class="fas fa-user"></i ><b> {{auth()->user()->name}}</b></h5>
+                  </span>
               </nav>
+              
             </div>
             </div>
             @yield('content')
