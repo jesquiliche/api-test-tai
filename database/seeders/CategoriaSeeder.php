@@ -128,6 +128,75 @@ class CategoriaSeeder extends Seeder
                 "nombre"=>"Arquitectura Java EE/Jakarta EE y plataforma.NET",
                 "descripcion"=>"Arquitectura Java EE/Jakarta EE y plataforma.NET: componentes, persistencia y seguridad. Características, elementos, lenguajes y funciones en ambos entornos."
             ],
+            [
+                "bloque_id"=>3,
+                "nombre"=>"Arquitectura de sistemas cliente/servidor",
+                "descripcion"=>"Arquitectura de sistemas cliente/servidor y multicapas: componentes y operación. Arquitecturas de servicios web y protocolos asociados."
+            ],
+            [
+                "bloque_id"=>3,
+                "nombre"=>"Aplicaciones web",
+                "descripcion"=>"Desarrollo web front-end y en servidor, multiplataforma y multidispositivo. Lenguajes: HTML, XML y sus derivaciones. Navegadores y lenguajes de programación web. Lenguajes de script."
+            ],
+            [
+                "bloque_id"=>3,
+                "nombre"=>"Accesibilidad, diseño universal y usabilidad.",
+                "descripcion"=>"Acceso y usabilidad de las tecnologías, productos y servicios relacionados con la sociedad de la información. Confidencialidad y disponibilidad de la información en puestos de usuario final. Conceptos de seguridad en el desarrollo de los sistemas."
+            ],
+            [
+                "bloque_id"=>3,
+                "nombre"=>"Herramientas CASE",
+                "descripcion"=>"características. Repositorios: estructura y actualización. Generación de código y documentación. Metodologías de desarrollo. Pruebas. Programas para control de versiones. Plataformas de desarrollo colaborativo de software."
+            ],
+            [
+                "bloque_id"=>4,
+                "nombre"=>"Administración del Sistema operativo",
+                "descripcion"=>"Administración del Sistema operativo y software de base. Actualización, mantenimiento y reparación del sistema operativo."
+            ],
+            [
+                "bloque_id"=>4,
+                "nombre"=>"Administración de bases de datos",
+                "descripcion"=>"Administración de bases de datos. Sistemas de almacenamiento y su virtualización. Políticas, sistemas y procedimientos de backup y su recuperación. Backup de sistemas físicos y virtuales. Virtualización de sistemas y virtualización de puestos de usuario."
+            ],
+            [
+                "bloque_id"=>4,
+                "nombre"=>"Administración de servidores de correo",
+                "descripcion"=>"Administración de servidores de correo electrónico sus protocolos. Administración de contenedores y microservicios."
+            ],
+            [
+                "bloque_id"=>4,
+                "nombre"=>"Administración de redes de área local",
+                "descripcion"=>"Administración de redes de área local. Gestión de usuarios. Gestión de dispositivos. Monitorización y control de tráfico."
+            ],
+            [
+                "bloque_id"=>4,
+                "nombre"=>"Conceptos de seguridad",
+                "descripcion"=>"Conceptos de seguridad de los sistemas de información. Seguridad física. Seguridad lógica. Amenazas y vulnerabilidades. Técnicas criptográficas y protocolos seguros. Mecanismos de firma digital. Infraestructura física de un CPD: acondicionamiento y equipamiento. Sistemas de gestión de incidencias. Control remoto de puestos de usuario."
+            ], [
+                "bloque_id"=>4,
+                "nombre"=>"Comunicaciones",
+                "descripcion"=>"Comunicaciones. Medios de transmisión. Modos de comunicación. Equipos terminales y equipos de interconexión y conmutación. Redes de comunicaciones. Redes de conmutación y redes de difusión. Comunicaciones móviles e inalámbricas.."
+            ],
+            [
+                "bloque_id"=>4,
+                "nombre"=>"El modelo TCP/IP",
+                "descripcion"=>"El modelo TCP/IP y el modelo de referencia de interconexión de sistemas abiertos (OSI) de ISO. Protocolos TCP/IP."
+            ],
+            [
+                "bloque_id"=>4,
+                "nombre"=>"Internet: arquitectura de red",
+                "descripcion"=>"Internet: arquitectura de red. Origen, evolución y estado actual. Principales servicios. Protocolos HTTP, HTTPS y SSL/TLS."
+            ],
+            [
+                "bloque_id"=>4,
+                "nombre"=>"Seguridad y protección en redes",
+                "descripcion"=>"Seguridad y protección en redes de comunicaciones. Seguridad perimetral. Acceso remoto seguro a redes. Redes privadas virtuales (VPN). Seguridad en el puesto del usuario."
+            ],
+            [
+                "bloque_id"=>4,
+                "nombre"=>"Redes locales",
+                "descripcion"=>"Redes locales. Tipología. Técnicas de transmisión. Métodos de acceso. Dispositivos de interconexión."
+            ],
             
             
         ];
