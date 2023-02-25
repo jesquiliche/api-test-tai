@@ -15,7 +15,7 @@ class PreguntaController extends Controller
     public function index()
     {
         //
-        $preguntas=Pregunta::paginate();
+        $preguntas=Pregunta::all()->shuffle()->take(20);
         return View('preguntas',compact('preguntas'));
 
     }

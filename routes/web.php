@@ -17,8 +17,17 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/preguntas', [App\Http\Controllers\PreguntaController::class,'index']);
+Route::get('/contacto',function(){
+    return view('contacto');
+})->name('contacto');
 
+Route::get('/test', [App\Http\Controllers\TestController::class,'index'])->name('test');
+
+Route::get('/preguntas', [App\Http\Controllers\PreguntaController::class,'index'])->name('preguntas');
+Route::post('/corregir',[App\Http\Controllers\ExamenController::class,'corregir'])->name('corregir');
+Route::get('/home',function(){
+    return view('home');
+})->name('home');
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),

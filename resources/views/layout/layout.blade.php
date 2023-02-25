@@ -24,32 +24,41 @@
             }
             .fas {
                 font-size: 20px;
+                color:rgb(57, 57, 93);
             }
             .fa-check {
                 color: rgb(132, 220, 132);
                 font-size: 18px;
-}           }
+           }
+           .nav-link {
+                color:rgb(57, 57, 93);
+           }
+           .card {
+                border-radius: 10px;
+           }
         </style>
     </head>
         <main>
             <div class="container-fluid bg-warning p-2 fixed-top mb-4">
             <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light bg-warning">
-                <a class="navbar-brand" href="#"><i class="fas fa-graduation-cap"></i> Test Oposiciones Tai</a>
                 
-                <div class="collapse navbar-collapse" id="navbarText">
+                    <img width="40" height="40" src="https://demo.sparklewpthemes.com/educenter/demos/wp-content/uploads/sites/3/2021/04/text-bg-eduma.png"  alt="" ">
+                    <h2><b>Oposiciones TAI     </b></h2>
+                
+                <div class="collapse navbar-collapse" id="navbarText px-4">
                     
                   <ul class="navbar-nav mr-auto">
                     <li class="nav-item active ml-3">
-                      <a class="nav-link" href="#"><i class="fas fa-home"></i>
+                      <a class="nav-link" href="{{route('home')}}"><i class="fas fa-home"></i>
                       </i> Home<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         
-                      <a class="nav-link" href="#"><i class="fas fa-book"></i> Test</a>
+                      <a class="nav-link" href="{{route('')}}"><i class="fas fa-book"></i> Test</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#"><i class="fas fa-envelope"></i> Contacto</a>
+                      <a class="nav-link" href="{{route('contacto')}}"><i class="fas fa-envelope"></i> Contacto</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#"><i class="fas fa-id-card"></i> Sobre mi</a>
